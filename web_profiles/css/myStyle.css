@@ -1,0 +1,21 @@
+/* myStyle.css */
+
+h1 {
+    color: #336699;
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    color: #e71e1e;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+section {
+    background-color: #f0f0f0;
+}
