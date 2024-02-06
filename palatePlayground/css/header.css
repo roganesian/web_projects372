@@ -1,0 +1,48 @@
+/* Styles for the header section */
+.header {
+  overflow: hidden;                   /* Clear any floated elements within the header */
+  background-color: #d7ccb9;          /* Background color of the header */
+  padding: 5px;                       /* Padding around the header content */
+}
+
+/* Styles for the navigation links within the header */
+.header a {
+  float: left;                          /* Float the links to the left */
+  color: darkslategray;                 /* Default text color for links */
+  text-transform: uppercase;            /* Convert text to uppercase */
+  text-align: center;                   /* Center-align the text within the links */
+  padding: 12px;                        /* Padding around the links */
+  text-decoration: none;                /* Remove underlines from links */
+  font-size: 18px;                      /* Font size of the links */
+}
+
+/* Hover effect for the navigation links */
+.header a:hover {
+  color: darkgoldenrod;                   /* Text color when hovering over links */
+}
+
+/* Styles for the active (selected) link in the header */
+.header a.active {
+  color: darkgoldenrod;                   /* Text color for the active link */
+  text-decoration: underline overline;    /* Underline and overline for active link */
+  text-decoration-thickness: 3px;         /* Thickness of the underline and overline */
+}
+
+/* Styles for the right-aligned content in the header */
+.header-right {
+  float: right;                           /* Float the content to the right */
+  margin-top: 12px;                       /* Top margin for the right-aligned content */
+}
+
+
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
