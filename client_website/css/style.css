@@ -1,19 +1,25 @@
-/* styles.css */
 /* General Styles */
 body {
-    background-color: #cecece;
+    background-color: #f2f2f2;
     font-family: 'Arial', sans-serif;
+}
+
+.error {
+    color: red;
 }
 
 /* Header Styles */
 #main-header {
     text-align: center;
+    background-color: #336699;
+    padding: 10px 0;
 }
 
 h1 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 28px;
-    color: #336699;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 /* Navigation Styles */
@@ -45,16 +51,33 @@ nav a:hover {
 section {
     clear: both;
     padding: 20px;
-    box-shadow: 2px 2px 2px #131313;
+    box-shadow: 2px 2px 5px #888888;
+    background-color: #ffffff;
+    margin-bottom: 20px;
 }
 
 img {
     float: left;
     margin: 0 20px 20px 0;
+    max-width: 100%;
 }
 
 .about-section {
     text-align: center;
+}
+
+/* Client Logos */
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logos img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
 }
 
 /* Responsive Design */
@@ -71,6 +94,7 @@ img {
 
     img {
         float: none;
-        margin: 0;
+        margin: 0 auto 20px auto;
+        display: block;
     }
 }
