@@ -98,3 +98,69 @@ img {
         display: block;
     }
 }
+
+/* Stats Styling */
+.stats-container {
+    display: flex;
+    justify-content: space-evenly; /* Adjusted spacing for larger screens */
+    align-items: center;
+    flex-wrap: wrap; /* Allows stats to wrap to the next line if necessary */
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #888888;
+    width: 30%; /* Adjust width to fit nicely on larger screens */
+    margin-bottom: 20px; /* Added margin between stats */
+}
+
+.stat h3 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #666666;
+}
+
+
+/* Feedback Styling */
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feedback-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px; /* Increased margin */
+}
+
+.feedback-content {
+    flex: 1; /* Make the feedback content fill the remaining space */
+}
+
+.feedback-content h4 {
+    margin-bottom: 10px;
+}
+
+.feedback-content p {
+    margin: 0;
+}
