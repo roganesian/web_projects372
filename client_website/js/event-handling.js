@@ -1,11 +1,10 @@
-// Add an event listener to wait for the DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-    const profileCards = document.querySelectorAll(".feedback-card");
+$(document).ready(function() {
+    const profileCards = $(".feedback-card");
 
-    profileCards.forEach(card => {
-        const profilePhoto = card.querySelector(".profile-photo img");
-        profilePhoto.addEventListener("click", function() {
-            const personName = profilePhoto.alt;
+    profileCards.each(function() {
+        const profilePhoto = $(this).find(".profile-photo img");
+        profilePhoto.on("click", function() {
+            const personName = profilePhoto.attr("alt");
             const personDetails = getPersonDetails(personName);
             displayModal(personDetails);
         });
@@ -17,32 +16,22 @@ document.addEventListener("DOMContentLoaded", function() {
      * @param {string} personDetails - The details of the person.
      */
     function displayModal(personDetails) {
-        const modalContainer = document.getElementById("modal-container");
+        const modalContainer = $("#modal-container");
 
-        const modal = document.createElement("div");
-        modal.classList.add("modal");
+        const modal = $("<div>").addClass("modal");
 
-        const modalContent = document.createElement("div");
-        modalContent.classList.add("modal-content");
+        const modalContent = $("<div>").addClass("modal-content");
 
-        const closeBtn = document.createElement("span");
-        closeBtn.classList.add("close");
-        closeBtn.innerHTML = "&times;";
-        closeBtn.addEventListener("click", function() {
+        const closeBtn = $("<span>").addClass("close").html("&times;").on("click", function() {
             modal.remove();
         });
 
-        const personDetailsContainer = document.createElement("div");
-        personDetailsContainer.classList.add("person-details");
-        
-        const personDetailsText = document.createTextNode(personDetails);
-        personDetailsContainer.appendChild(personDetailsText);
+        const personDetailsContainer = $("<div>").addClass("person-details").text(personDetails);
 
-        modalContent.appendChild(closeBtn);
-        modalContent.appendChild(personDetailsContainer);
-        modal.appendChild(modalContent);
+        modalContent.append(closeBtn, personDetailsContainer);
+        modal.append(modalContent);
 
-        modalContainer.appendChild(modal);
+        modalContainer.append(modal);
     }
 
     /**
