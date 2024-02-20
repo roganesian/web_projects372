@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     // Function to prompt user for input if field is empty
     function promptForInput() {
-        resultParagraph.text("Please enter a store name.").addClass("error");
+        resultParagraph.text("Please enter a store name.").css("color", "red");
     }
 
     // Function to check if the entered store is partnered
@@ -30,9 +30,9 @@ $(document).ready(function() {
         const partneredStore = partneredStoresInfo.find(storeInfo => storeInfo.name === userInput);
 
         if (partneredStore) {
-            resultParagraph.text(`Yes, we are partnered with ${userInput}. ${partneredStore.details}`).removeClass("error");
+            resultParagraph.text(`Yes, we are partnered with ${userInput}. ${partneredStore.details}`).css("color", "green")
         } else {
-            resultParagraph.text(`No, we are not partnered with ${userInput}.`).removeClass("error");
+            resultParagraph.text(`No, we are not partnered with ${userInput}.`).css("color", "black")
         }
     }
 
