@@ -30,9 +30,9 @@ $(document).ready(function() {
         const partneredStore = partneredStoresInfo.find(storeInfo => storeInfo.name === userInput);
 
         if (partneredStore) {
-            resultParagraph.text(`Yes, we are partnered with ${userInput}. ${partneredStore.details}`).css("color", "green")
+            resultParagraph.text(`Yes, we are partnered with ${userInput}. ${partneredStore.details}`).css("color", "green");
         } else {
-            resultParagraph.text(`No, we are not partnered with ${userInput}.`).css("color", "black")
+            resultParagraph.text(`No, we are not partnered with ${userInput}.`).css("color", "black");
         }
     }
 
