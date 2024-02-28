@@ -23,7 +23,7 @@ function loadHTMLFile(filePath) {
     xhr.open('GET', filePath, true);
     
     // Send the request.
-    xhr.send();
+    xhr.send(null);
 }
 
 // Select the “Don Quixote” image and assign an event listener to it. When this image is clicked, the following should happen:
