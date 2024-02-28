@@ -30,14 +30,15 @@ function loadHTMLFile(filePath) {
 const donQuixoteImage = document.getElementById('don-quixote-img');
 donQuixoteImage.addEventListener('click', function() {
     // Call your function that triggers your Ajax request to load the data about this book from the HTML file you created in the previous part.
-    loadHTMLFile('../data/cervantes-data.html');
+    loadHTMLFile('data/cervantes-data.html');
     
     // Call your function to change the opacities of all images to 0.5.
     changeImageOpacity();
     
     // Select the “Don Quixote” image and change its opacity to 1.
     donQuixoteImage.style.opacity = 1;
-});
+    
+}, false);
 
 // Select the “A Tale of Two Cities” image and assign an event listener to it. When this image is clicked, the following should happen:
 const taleOfTwoCitiesImage = document.getElementById('two-cities-img');
@@ -51,7 +52,7 @@ taleOfTwoCitiesImage.addEventListener('click', function() {
     
     // Select the “A Tale of Two Cities” image and change its opacity to 1.
     taleOfTwoCitiesImage.style.opacity = 1;
-});
+}, false);
 
 // Select the “The Lord of the Rings” image and assign an event listener to it. When this image is clicked, the following should happen:
 const lordOfTheRingsImage = document.getElementById('lotr-img');
@@ -65,4 +66,4 @@ lordOfTheRingsImage.addEventListener('click', function() {
     
     // Select the “The Lord of the Rings” image and change its opacity to 1.
     lordOfTheRingsImage.style.opacity = 1;
-});
+}, false);
