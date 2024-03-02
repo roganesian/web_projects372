@@ -1,13 +1,9 @@
 $(document).ready(function() {
-    const profileCards = $(".feedback-card");
-
-    profileCards.each(function() {
-        const profilePhoto = $(this).find(".profile-photo img");
-        profilePhoto.on("click", function() {
-            const personName = profilePhoto.attr("alt");
-            const personDetails = getPersonDetails(personName);
-            displayModal(personDetails);
-        });
+    // Event delegation for profile photo clicks
+    $(document).on("click", ".profile-photo img", function() {
+        const personName = $(this).attr("alt");
+        const personDetails = getPersonDetails(personName);
+        displayModal(personDetails);
     });
 
     /**

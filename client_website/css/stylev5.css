@@ -194,3 +194,22 @@ img {
 .person-details {
     margin-top: 20px;
 }
+
+/* Socials Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Adjust spacing between social icons */
+}
+
+.social-icons img {
+    width: 50px; /* Adjust the size of social media icons */
+    height: 50px;
+    margin: 5px; /* Adjust margin around each social icon */
+}
