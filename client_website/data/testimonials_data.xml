@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <testimonial>
+        <name>Gordon Ramsay</name>
+        <quote>"It is easy to see why Enerjy is so popular. The food is delicious, the service is great, and the prices are reasonable."</quote>
+    </testimonial>
+    <testimonial>
+        <name>Robert Irvine</name>
+        <quote>"Their slogan says it all. If you want to live well, you have to eat well!"</quote>
+    </testimonial>
+    <testimonial>
+        <name>Guy Fieri</name>
+        <quote>"I love Enerjy! I have been a customer for years and I have never been disappointed."</quote>
+    </testimonial>
+</root>
