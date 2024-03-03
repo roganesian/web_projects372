@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Load additional content using AJAX when the page loads
-    $("#dynamic-content").load("data/socials.html", function() {
+    $("#socials").load("data/socials.html", function() {
         // Hide all social icons initially
         $(".social-icons a").hide();
         
